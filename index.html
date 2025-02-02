@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic tests</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">فريق العمل</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+      <div class="overlay"></div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8 mx-auto text-center text-white z-3">
+            <h1 data-aos="fade-down" data-aos-duration="1000">
+              مرحباً بك في منصتنا التعليمية
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              class="lead mb-4"
+            >
+              نوفر لك تجربة تعليمية متطورة تعتمد على الذكاء الاصطناعي وأحدث
+              التقنيات لضمان افضل النتائج ف التعليم
+            </p>
+            <a
+              href="upload.html"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+              class="btn btn-primary btn-lg px-5 py-3"
+              >ابدأ رحلتك التعليمية</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section overflow-hidden py-6">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="400">
+            <h2 class="mb-5" data-aos="fade-down">من نحن</h2>
+            <h3 class="mb-4">تعليم متطور باستخدام الذكاء الاصطناعي</h3>
+            <p class="lead">
+              يعمل الموقع عبر الإنترنت، مما يتيح للطلاب والمعلمين الوصول إليه من
+              أي مكان وفي أي وقت، سواء من خلال أجهزة الكمبيوتر أو الهواتف
+              الذكية. يهدف الموقع إلى تعزيز التحصيل الدراسي الفعّال من خلال
+              اختبارات دورية ومتابعة مستمرة لمستوى الأداء الأكاديمي، مما يساعد
+              في تحسين الأداء العام للطلاب.
+            </p>
+            <ul class="mt-4">
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-primary me-2"></i> اختبارات
+                دورية لمتابعة مستوى الأداء الأكاديمي
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-primary me-2"></i> تحسين
+                الأداء العام للطلاب عبر التحليل الذكي للإجابات
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-primary me-2"></i> اقتراحات
+                مخصصة للمحتوى الذي يحتاج الطلاب إلى مراجعته
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <img
+              src="images/hand-drawn-ai-generating-artworks-illustration_23-2151170192.jpg"
+              class="img-fluid rounded w-75"
+              alt="About Us"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="services-section py-6 overflow-hidden bg-light"
+    >
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-down">خدماتنا</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon-box mb-4">
+                <img
+                  src="images/chip-intelligence-processor-svgrepo-com.svg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <h3>تقنيات الذكاء الاصطناعي</h3>
+              <p>
+                نوفر أحدث تقنيات الذكاء الاصطناعي لتحسين تجربة التعلم وتخصيص
+                المحتوى التعليمي.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-box mb-4">
+                <img
+                  src="images/analysis-graph-growth-svgrepo-com.svg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <h3>تحليل الأداء</h3>
+              <p>
+                نقدم تحليلات متقدمة لتتبع تقدم الطلاب وتحسين نتائجهم الأكاديمية.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="icon-box mb-4">
+                <img
+                  src="images/education-library-metting-svgrepo-com.svg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <h3>التعلم عن بعد</h3>
+              <p>
+                منصة متكاملة للتعلم عن بعد مع إمكانية الوصول من أي مكان وفي أي
+                وقت.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section py-6 overflow-hidden">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-down">فريق العمل</h2>
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/smah.jpg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>ا.م.د/سماح زغلول</h4>
+                <p>المشرف العام</p>
+                <div class="team-social">
+                  <a href="#">
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/ahlam.jpg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>ا.م.د/احلام محمد السيد</h4>
+                <p>مشرف تقني</p>
+                <div class="team-social">
+                  <a href="#">
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/mohamed.jpg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>د.محمد محمد ابراهيم</h4>
+                <p>مشرف أكاديمي للمشروع</p>
+                <div class="team-social">
+                  <a href="#">
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/sara.jpg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>م/ساره عبدالقادر السيد</h4>
+                <p>مصمم جرافيك و AI</p>
+                <div class="team-social">
+                  <a
+                    href="https://www.facebook.com/sara.abdelkader.796?rdid=bKSasX5T6X4SuiP7&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GYpkAXqrr%2F#"
+                    target="_blank"
+                  >
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="https://wa.me/+201006010927" target="_blank">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/naden.jpg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>م/نادين خالد عبدالعزيز محمد</h4>
+                <p>مطور تطبيقات ومحلل بيانات</p>
+                <div class="team-social">
+                  <a
+                    href="https://www.facebook.com/manar.khaled.7587370?mibextid=wwXIfr&rdid=aVqt01O3zyXNZDp9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1NN1EgDDNq%2F%3Fmibextid%3DwwXIfr#"
+                    target="_blank"
+                  >
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="https://wa.me/+201080469819" target="_blank">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/aya.jpeg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>م/ايه صابر عبدالله</h4>
+                <p>محلل محتوى</p>
+                <div class="team-social">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100075034821361&rdid=3Ml6oQ8FRcsnTN9Q&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14haaLCkm2%2F#"
+                  >
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="https://wa.me/+201016949234" target="_blank">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="images/Team/eman.jpg"
+                  alt="Team Member"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="team-info">
+                <h4>م/ايمان حمدي عبدالقادر</h4>
+                <p>محلل محتوى</p>
+                <div class="team-social">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100084438739023&rdid=uvTUxoBqDZwGXD7c&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1F5TfMXBJb%2F#"
+                  >
+                    <img src="images/facebook-svgrepo-com.svg" alt="" />
+                  </a>
+                  <a href="https://wa.me/+201098941973" target="_blank">
+                    <img src="images/whatsapp-svgrepo-com.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-2 text-white">
+      <div class="container">
+        <div class="text-center">
+          <p>جميع الحقوق محفوظة لدى Team التدخل السريع © 2025</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          document.querySelector(".navbar").classList.add("navbar-scrolled");
+        } else {
+          document.querySelector(".navbar").classList.remove("navbar-scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>

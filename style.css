@@ -1,0 +1,310 @@
+/* General Styles */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  line-height: 1.6;
+}
+
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+nav .logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.navbar-scrolled {
+  background: rgba(33, 37, 41, 0.98);
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  /* background: linear-gradient(135deg, #1a237e, #311b92); */
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/robot-hand-finger-background-ai-technology_53876-129766.jpg);
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+}
+
+/* About Section */
+.about-section img {
+  border-radius: 10px;
+}
+
+/* Services Section */
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+  /* background: var(--primary-color); */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Contact Section */
+.contact-form .form-control {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-color);
+}
+
+.footer h4 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: white;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Team Section */
+.team-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  height: 400px;
+}
+
+.team-image img {
+  width: 100%;
+  height: auto;
+}
+
+.team-social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.team-card:hover .team-social {
+  bottom: 0;
+}
+
+.team-social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.team-social a:hover {
+  transform: scale(1.2);
+}
+
+.team-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.team-info h4 {
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.team-info p {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+/* Upload Page */
+.upload-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+  border: 2px dashed #dee2e6;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: var(--primary-color);
+  background: #fff;
+}
+
+/* Contact Page */
+.contact-page {
+  background: #f8f9fa;
+}
+
+.contact-info-card,
+.contact-form-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.contact-info-card .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-card .info-item i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 0.2rem;
+}
+
+.contact-info-card .info-item div {
+  flex: 1;
+}
+
+.contact-info-card .info-item h5 {
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.contact-info-card .info-item p {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.contact-form-card .form-control {
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.contact-form-card textarea.form-control {
+  resize: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.2rem;
+  }
+
+  .py-6 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
