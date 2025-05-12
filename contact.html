@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand logo" href="index.html">
-          <img src="images/logo.png" alt="" />
+          <img src="images/logo.jpeg" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -93,7 +93,12 @@
               <form id="contactForm">
                 <div class="mb-3">
                   <label class="form-label">الاسم</label>
-                  <input type="text" class="form-control" name="name" placeholder="الاسم" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder="الاسم"
+                  />
                 </div>
                 <div class="mb-3">
                   <label class="form-label">البريد الإلكتروني</label>
@@ -149,15 +154,18 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function() {
+      (function () {
         emailjs.init("LKjbnaQOO-QoT_sfh"); // PUBLIC ID
       })();
     </script>
     <script>
-      $(document).ready(function() {
-        $('#contactForm').on('submit', function(event) {
+      $(document).ready(function () {
+        $("#contactForm").on("submit", function (event) {
           event.preventDefault(); // Prevent the default form submission
 
           // Get the form data
@@ -165,19 +173,23 @@
             name: $('input[name="name"]').val(),
             email: $('input[name="email"]').val(),
             subject: $('input[name="subject"]').val(),
-            message: $('textarea[name="message"]').val()
+            message: $('textarea[name="message"]').val(),
           };
 
           // Send the email using EmailJS
-          emailjs.send('service_fgmqd7u', 'template_lmc66tg', formData) // Replace with your service ID and template ID
-            .then(function(response) {
-              alert('تم إرسال الرسالة بنجاح!');
-              console.log('SUCCESS!', response.status, response.text);
-              $('#contactForm').trigger("reset");
-            }, function(error) {
-              alert('حدث خطأ أثناء إرسال الرسالة. الرجاء المحاولة مرة أخرى.');
-              console.log('FAILED...', error);
-            });
+          emailjs
+            .send("service_fgmqd7u", "template_lmc66tg", formData) // Replace with your service ID and template ID
+            .then(
+              function (response) {
+                alert("تم إرسال الرسالة بنجاح!");
+                console.log("SUCCESS!", response.status, response.text);
+                $("#contactForm").trigger("reset");
+              },
+              function (error) {
+                alert("حدث خطأ أثناء إرسال الرسالة. الرجاء المحاولة مرة أخرى.");
+                console.log("FAILED...", error);
+              }
+            );
         });
       });
     </script>
